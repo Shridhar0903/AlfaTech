@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- ===================== NAVBAR ===================== -->
+<!-- ================================================= -->
+
+<header class="navbar" id="navbar">
+
+<div class="nav-wrapper">
+
+<!-- LEFT LOGO -->
+
+<div class="nav-left">
+<img src="Images/logo.png" class="logo">
+</div>
+
+
+<!-- CENTER MENU -->
+
+<nav class="nav-center">
+
+<a href="#">Home</a>
+<a href="#">Clients</a>
+<a href="#">About Us</a>
+<a href="#">Careers</a>
+<a href="#">Products</a>
+<a href="#">Contact Us</a>
+
+</nav>
+
+
+<!-- RIGHT BUTTON -->
+
+<div class="nav-right">
+
+<a href="#" class="contact-btn">
+Contact
+<span>↗</span>
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- ================================================= -->
+<!-- ===================== HERO ======================= -->
+<!-- ================================================= -->
+
+<section class="hero">
+
+<!-- Background Video -->
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="video/factory.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+
+<!-- HERO CONTENT -->
+
+<div class="hero-content fade-up">
+
+<span class="small-heading">
+DAIRY EQUIPMENT EXPERTS
+</span>
+
+<h1>
+Trusted Dairy & Milking <br>
+Machine Manufacturers <br>
+Since 30+ Years
+</h1>
+
+<p>
+
+Delivering reliable milking and dairy machines with over
+30 years of experience in innovation, performance,
+and farmer-focused solutions.
+
+</p>
+
+<a href="#" class="hero-btn">
+CUSTOMIZE YOURS TODAY
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- ===================== ABOUT ====================== -->
+<!-- ================================================= -->
+
+<section class="about">
+
+<div class="about-container">
+
+
+<!-- LEFT IMAGE COLLAGE -->
+
+<div class="about-images">
+
+<div class="img-card main-img reveal-left">
+<img src="Images/about1.jpg">
+</div>
+
+<div class="img-card top-img reveal-left">
+<img src="Images/about2.jpg">
+</div>
+
+<div class="img-card bottom-img reveal-left">
+<img src="Images/about3.jpg">
+</div>
+
+<div class="experience-badge reveal-left">
+
+<span class="icon">🏆</span>
+
+<div>
+<h3>25+</h3>
+<p>Years Of Experience</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- RIGHT CONTENT -->
+
+<div class="about-content reveal-right">
+
+<span class="section-tag">ABOUT US</span>
+
+<h1>
+Leading Dairy Equipment <br>
+Manufacturers In India
+</h1>
+
+<p class="about-text">
+
+We specialize in manufacturing high-quality dairy
+and milking machines designed to improve productivity
+and efficiency for modern dairy farms.
+
+</p>
+
+
+<div class="about-points">
+
+<!-- Vision -->
+
+<div class="point">
+
+<div class="icon">
+<i class="fa-solid fa-eye"></i>
+</div>
+
+<div>
+
+<h4>Our Vision</h4>
+
+<p>
+To provide advanced dairy technology that empowers
+farmers and improves milk production worldwide.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Mission -->
+
+<div class="point">
+
+<div class="icon">
+<i class="fa-solid fa-bullseye"></i>
+</div>
+
+<div>
+
+<h4>Our Mission</h4>
+
+<p>
+Deliver durable, efficient, and affordable dairy
+machines with excellent after-sales support.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" class="about-btn">
+Learn More
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- ================== PRODUCT SECTION =============== -->
+<!-- ================================================= -->
+
+<section class="product-section">
+
+
+<div class="section-head reveal">
+
+<span>OUR PRODUCTS</span>
+
+<h2>Dairy Equipment & Milking Machines</h2>
+
+</div>
+
+<div class="product-wrapper reveal">
+
+<!-- LEFT CONTENT -->
+<div class="product-left reveal">
+
+<!-- PRODUCT CONTENT WRAPPER (For Animation) -->
+<div id="productContent">
+<h2 id="title">Milk Analyzers</h2>
+<h4 id="subtitle">
+Automatic Pallet Wrapper
+</h4>
+
+<p id="description">
+We specialize in manufacturing high-quality dairy
+machines designed to improve productivity
+and efficiency for modern dairy farms.
+</p>
+
+<button class="read-btn reveal">
+READ MORE →
+</button>
+
+</div>
+
+
+<!-- NAVIGATION LINES -->
+
+<div class="nav-lines reveal">
+
+<span onclick="changeProduct(0)"
+class="line active"></span>
+
+<span onclick="changeProduct(1)"
+class="line"></span>
+
+<span onclick="changeProduct(2)"
+class="line"></span>
+
+<span onclick="changeProduct(3)"
+class="line"></span>
+
+</div>
+</div>
+
+<!-- RIGHT IMAGE -->
+
+<div class="product-right reveal">
+
+<div class="product-image-box">
+
+<img id="productImage"
+src="Images/REIL-EMT.png">
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- =============================== -->
+<!-- WHY CHOOSE US -->
+<!-- =============================== -->
+
+<section class="why-section reveal">
+
+<div class="why-container">
+
+<div class="why-top reveal">
+
+<div class="why-left reveal">
+
+<span>WHY CHOOSE US</span>
+
+<h2>Make Your Dairy Operations Trustworthy</h2>
+
+</div>
+
+
+<div class="why-right reveal">
+
+<p>
+Our dairy and milking machines are designed to deliver reliability, hygiene, and efficiency for modern dairy farms.
+With years of engineering expertise, we help farmers
+increase productivity while maintaining milk quality.
+</p>
+
+<a href="#" class="why-btn reveal">Know More</a>
+
+</div>
+
+</div>
+
+
+<div class="why-cards reveal">
+
+<div class="why-card reveal">
+
+<div class="icon-circle reveal">
+<i class="fa-solid fa-gears"></i>
+</div>
+
+<h3>Advanced Milking Technology</h3>
+
+<p>
+Our machines use modern dairy engineering
+to ensure faster and hygienic milking operations
+for every farm.
+</p>
+
+</div>
+
+
+
+<div class="why-card middle-card reveal">
+
+<div class="icon-circle reveal">
+<i class="fa-solid fa-cow"></i>
+</div>
+
+<h3>Designed for Dairy Farmers</h3>
+
+<p>
+User-friendly machines that simplify
+daily dairy tasks and improve productivity
+without complex operations.
+</p>
+
+</div>
+
+
+
+<div class="why-card reveal">
+
+<div class="icon-circle reveal">
+<i class="fa-solid fa-award"></i>
+</div>
+
+<h3>Durable & Reliable Machines</h3>
+
+<p>
+Built using high quality components
+to ensure long life, reliability,
+and consistent performance.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======================contact section====================== -->
+
+<section class="contact-cta reveal">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="cta-video">
+    <source src="video/milk.mp4" type="video/mp4">
+  </video>
+
+  <!-- Blue Gradient Overlay -->
+  <div class="cta-overlay"></div>
+
+  <!-- Content -->
+  <div class="cta-content reveal">
+    <h2>Ready to Improve Your Water Treatment System?</h2>
+   <p>
+      Partner with Aquagreen Tech Solutions for sustainable and
+      efficient water treatment solutions tailored to your needs.
+    </p>
+    <a href="contact.html" class="cta-btn reveal">Contact Us</a>
+  </div>
+</section>
+
+<!-- ======================footer========================= -->
+ <footer class="footer reveal">
+
+<div class="footer-container">
+
+<!-- COLUMN 1 -->
+
+<div class="footer-col footer-brand">
+
+<img src="images/logo.png" class="footer-logo">
+
+<p>
+Leading manufacturer of advanced dairy machinery and milking
+solutions helping modern farms increase productivity and efficiency.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+<!-- COLUMN 2 -->
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- COLUMN 3 -->
+
+<div class="footer-col">
+
+<h3>Our Products</h3>
+
+<ul>
+<li><a href="#">Milking Machines</a></li>
+<li><a href="#">Milk Cooling Tanks</a></li>
+<li><a href="#">Dairy Processing Units</a></li>
+<li><a href="#">Farm Equipment</a></li>
+</ul>
+
+</div>
+
+<!-- COLUMN 4 -->
+
+<div class="footer-col">
+
+<h3>Contact</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+<p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+<p><i class="fa-solid fa-envelope"></i> info@dairymachines.com</p>
+
+<div class="newsletter">
+
+<input type="email" placeholder="Your email">
+<button><i class="fa-solid fa-paper-plane"></i></button>
+</div>
+</div>
+</div>
+<!-- BOTTOM -->
+<div class="footer-bottom">
+<p>© 2026 Dairy Machine Manufacturer. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
