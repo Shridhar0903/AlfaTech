@@ -129,31 +129,50 @@ transition:0.3s;
 width:100%;
 }
 
-/* RIGHT BUTTON */
+/* RIGHT BUTTONS */
 .nav-right{
-justify-self:end;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    justify-content:flex-end;
 }
 
+/* LOGIN (secondary) */
+.login-btn{
+    padding:10px 20px;
+    border:1px solid white;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:white;
+    color:#041f71;
+}
+
+/* CONTACT (primary) */
 .contact-btn{
-background:#ffffff;
-color:#041f71;
-padding:12px 24px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-display:flex;
-align-items:center;
-gap:6px;
-transition:0.3s;
-border-color: #fff;
-margin-right: 20px;
+    padding:10px 22px;
+    background:white;
+    color:#041f71;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    transition:0.3s;
 }
 
 .contact-btn:hover{
-background:#02304fe9;
-color:white;
-border:2px solid #ffffff;       
-transform:translateY(-3px);
+    background:#041f71;
+    color:white;
+    border:1px solid white;
+    transform:translateY(-2px);
 }
 
 
