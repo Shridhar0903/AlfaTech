@@ -149,6 +149,21 @@ border-color: #fff;
 margin-right: 20px;
 }
 
+.login-btn{
+background:#ffffff;
+color:#041f71;
+padding:12px 24px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:6px;
+transition:0.3s;
+border-color: #fff;
+margin-right: 20px;
+}
+
 .contact-btn:hover{
 background:#02304fe9;
 color:white;
