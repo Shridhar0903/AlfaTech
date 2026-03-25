@@ -77,22 +77,23 @@ align-items:center;
 
 /* LEFT */
 .nav-left{
-justify-self:start;
+
+  display: flex;            /* align logo + text in a row */
+    align-items: center;      /* vertically center text with logo */
+    gap: 10px;                /* spacing between logo and text */
+    justify-self: start;
 }
 
 .logo{
-height:50px;
-margin-left: 20px;
-filter:drop-shadow(0 3px 8px rgba(0,0,0,0.6));
+ height: 50px;             /* logo height */
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.6));
 }
 
 .nav-left span{
-    font-size: 44px;
+     font-size: 30px;        /* small, readable text relative to logo */
     color: white;
-    align-items:center;
-    text-align: center;
-    justify-content: center;
     font-weight: 600;
+    line-height: 1;  
 }
 
 /* CENTER MENU */
@@ -162,8 +163,6 @@ background:rgba(4, 34, 94, 0.76);
 backdrop-filter:blur(12px);
 border-bottom:1px solid rgba(255,255,255,0.1);
 }
-
-
 /* ============================= */
 /* CONTACT HERO SECTION */
 /* ============================= */
@@ -174,7 +173,7 @@ display:flex;
 align-items:center;
 padding:0 10%;
 
-background:url("https://static.vecteezy.com/system/resources/previews/013/732/846/original/milk-jet-background-milky-splash-realistic-liquid-white-splash-on-isolated-background-3d-illustration-vector.jpg") no-repeat center center/cover;
+background:url("/Images/ct.jpg") no-repeat center center/cover;
 
 position:relative;
 color:#fff;
@@ -234,11 +233,12 @@ margin-bottom:30px;
 .hero-buttons{
 display:flex;
 gap:15px;
+margin-top: 40px;
 }
 
 /* BUTTON STYLE (if not already in your CSS) */
 
-.btn-primary{
+/* .btn-primary{
 background:#02304fe9;
 padding:12px 28px;
 color:#fff;
@@ -253,8 +253,25 @@ transition:0.3s;
 background:#fff;
 color:#041f71;
 transform:translateY(-2px);
-}
+} */
 
+/* Extra CTA Button */
+.hero-buttons .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(0, 46, 98, 0.804);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+   border: 1px solid white
+}
+.hero-buttons .btn-primary:hover {
+    background: #ffffff;
+    color: #032d51;
+}
 .btn-outline{
 border:2px solid #fff;
 padding:12px 28px;
@@ -296,6 +313,25 @@ flex-wrap:wrap;
 }
 
 }
+
+.hero-benefits {
+    margin: 20px 0;
+    padding-left: 0;
+    list-style: none;
+}
+.hero-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.hero-benefits li i {
+    color: #f0b33c;
+    font-size: 18px;
+}
+
 
 /* ============================= */
 /* PREMIUM CONTACT SECTION */
@@ -464,124 +500,6 @@ padding:30px;
 
 }
 
-/* ============================= */
-/* CLEAN CONTACT EXTRA */
-/* ============================= */
-
-.contact-extra-clean{
-padding:120px 10%;
-background:#ffffff;
-}
-
-/* GRID */
-
-.extra-container{
-display:grid;
-grid-template-columns:1.2fr 1fr;
-gap:80px;
-align-items:center;
-}
-
-/* ================= LEFT SIDE ================= */
-
-.office-list h2{
-font-size:34px;
-margin-bottom:10px;
-}
-
-.section-sub{
-color:#666;
-margin-bottom:40px;
-}
-
-/* OFFICE ITEM */
-
-.office-item{
-display:flex;
-gap:20px;
-margin-bottom:30px;
-position:relative;
-}
-
-/* LINE (timeline effect) */
-
-.office-item::before{
-content:"";
-position:absolute;
-left:10px;
-top:30px;
-width:2px;
-height:100%;
-background:#ddd;
-}
-
-/* DOT */
-
-.dot{
-width:20px;
-height:20px;
-background:#02304fe9;
-border-radius:50%;
-margin-top:5px;
-flex-shrink:0;
-}
-
-/* TEXT */
-
-.office-text h4{
-color:#02304fe9;
-margin-bottom:5px;
-}
-
-.office-text p{
-color:#555;
-font-size:14px;
-margin-bottom:5px;
-}
-
-.office-text span{
-font-size:13px;
-color:#999;
-}
-
-/* ================= RIGHT CTA ================= */
-
-.cta-clean{
-padding-left:40px;
-border-left:2px solid #eee;
-}
-
-.cta-clean h2{
-font-size:32px;
-margin-bottom:15px;
-}
-
-.cta-clean p{
-color:#666;
-margin-bottom:25px;
-line-height:1.6;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:768px){
-
-.extra-container{
-grid-template-columns:1fr;
-gap:50px;
-}
-
-.cta-clean{
-border-left:none;
-padding-left:0;
-text-align:center;
-}
-
-.office-item::before{
-display:none;
-}
-
-}
 
 /* ========================= */
 /* FOOTER */

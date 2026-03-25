@@ -31,10 +31,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <nav class="nav-center">
 
 <a href="index.html">Home</a>
-<a href="clients.html">Clients</a>
 <a href="about.html">About Us</a>
-<a href="careers.html">Careers</a>
 <a href="product.html">Products</a>
+<a href="clients.html">Clients</a>
+<a href="careers.html">Careers</a>
+
 
 </nav>
 
@@ -234,24 +235,20 @@ Contact HR
         <div class="job-list">
 
             <div class="job-item">
-                <h3>Project Manager</h3>
-                <p>5–10 years experience | 1 Position</p>
+                <h3>Service Engineers</h3>
+                <p>10th / 12th / ITI / Diploma pass with adequate knowledge of English.</p>
             </div>
 
             <div class="job-item">
-                <h3>Sales Executive</h3>
-                <p>2–5 years experience | 2 Positions</p>
+                <h3>Senior R&D Engineer (Electronics)</h3>
+                <p>Experience: Minimum 3 years</p>
             </div>
 
             <div class="job-item">
-                <h3>Accounts Manager</h3>
-                <p>5+ years experience | 1 Position</p>
+                <h3>Associate Programmer</h3>
+                <p>Experience: 1–3 years.|Qualifications: BE (Computer/IT), BCS, or MCS.</p>
             </div>
 
-            <div class="job-item">
-                <h3>Production Engineer</h3>
-                <p>3–6 years experience | 2 Positions</p>
-            </div>
 
         </div>
 
@@ -269,10 +266,10 @@ Contact HR
 
                 <select required>
                     <option value="">Select Position</option>
-                    <option>Project Manager</option>
-                    <option>Sales Executive</option>
-                    <option>Accounts Manager</option>
-                    <option>Production Engineer</option>
+                    <option>Service Engineer</option>
+                    <option>Senior R&D Engineer (Electronics)</option>
+                    <option>Associate Programmer</option>
+                    
                 </select>
 
                 <input type="file">
@@ -314,6 +311,51 @@ Contact HR
     </div>
 
 </section>
+
+<!-- 
+Positioned Card -->
+
+<!-- Modal for Open Positions -->
+<div id="careerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Open Positions at Alfa Tech</h2>
+
+        <!-- Service Engineer -->
+        <div class="career-item">
+            <h3>Service Engineer</h3>
+            <p><strong>Qualifications:</strong> 10th / 12th / ITI / Diploma pass with adequate knowledge of English.</p>
+            <p><strong>Responsibilities:</strong> Travel to rural areas in India to install milking machines and other systems.</p>
+        </div>
+
+        <!-- Senior R&D Engineer (Electronics) -->
+        <div class="career-item">
+            <h3>Senior R&D Engineer (Electronics)</h3>
+            <p><strong>Experience:</strong> Minimum 3 years.</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Core electronics circuit designing for analogue & digital systems.</li>
+                <li>Work with Orcad or Allegro for schematic designing (layout optional).</li>
+                <li>Use of oscilloscope, function generators, and logic analysers.</li>
+                <li>Circuit tracing and knowledge of standard electronic circuits (op-amps, filters, comparators).</li>
+                <li>Familiarity with standard digital logic circuits.</li>
+            </ul>
+        </div>
+
+        <!-- Associate Programmer -->
+        <div class="career-item">
+            <h3>Associate Programmer</h3>
+            <p><strong>Experience:</strong> 1–3 years.</p>
+            <p><strong>Qualifications:</strong> BE (Computer/IT), BCS, or MCS.</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Work on Windows Azure cloud.</li>
+                <li>Must know C++ & C#.</li>
+                <li>Knowledge of Windows internals, sockets, RPC (DCOM), and threading.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 <!-- ======================footer========================= -->
@@ -367,9 +409,9 @@ solutions helping modern farms increase productivity and efficiency.
 
 <ul>
 <li><a href="#">Milking Machines</a></li>
-<li><a href="#">Milk Cooling Tanks</a></li>
-<li><a href="#">Dairy Processing Units</a></li>
-<li><a href="#">Farm Equipment</a></li>
+<li><a href="#">Milk Analzer</a></li>
+<li><a href="#">Khawa Processing Machine</a></li>
+<li><a href="#">Dairy Weighing system</a></li>
 </ul>
 
 </div>
@@ -380,9 +422,10 @@ solutions helping modern farms increase productivity and efficiency.
 
 <h3>Contact</h3>
 
-<p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
-<p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
-<p><i class="fa-solid fa-envelope"></i> info@dairymachines.com</p>
+
+<p><i class="fa-solid fa-location-dot"></i> 1717,Zenith Complex,Opp. Krushi Bhavan,Shivajinagar, Pune-411005, Maharashtra, India</p>
+<p><i class="fa-solid fa-phone"></i>+919822020999; 020-25530399</p>
+<p><i class="fa-solid fa-envelope"></i> sales@alfatechindia.com</p>
 
 <div class="newsletter">
 
@@ -401,6 +444,7 @@ solutions helping modern farms increase productivity and efficiency.
 
 
 <script src="js/script.js"></script>
+<script src="js/career.js"></script>
     
 </body>
 </html>

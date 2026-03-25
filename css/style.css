@@ -77,22 +77,23 @@ align-items:center;
 
 /* LEFT */
 .nav-left{
-justify-self:start;
+
+  display: flex;            /* align logo + text in a row */
+    align-items: center;      /* vertically center text with logo */
+    gap: 10px;                /* spacing between logo and text */
+    justify-self: start;
 }
 
 .logo{
-height:50px;
-margin-left: 20px;
-filter:drop-shadow(0 3px 8px rgba(0,0,0,0.6));
+ height: 50px;             /* logo height */
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.6));
 }
 
 .nav-left span{
-    font-size: 44px;
+     font-size: 30px;        /* small, readable text relative to logo */
     color: white;
-    align-items:center;
-    text-align: center;
-    justify-content: center;
     font-weight: 600;
+    line-height: 1;  
 }
 
 /* CENTER MENU */
@@ -944,7 +945,7 @@ text-align:start;
 overflow:hidden;
 color:white;
 margin-top:50px;
-background: url('https://wallpapers.com/images/hd/milk-background-nn4uqvyma4v02ltr.jpg') center/cover no-repeat;
+background: url('/Images/contact.jpg') center/cover no-repeat;
 
 z-index: -2;
 

@@ -53,7 +53,7 @@ const products = [
     title: "Khawa Machine",
     subtitle: "Efficient Khawa (Mawa) Processing Machine",
     desc: "Designed for dairy production, this machine efficiently converts milk into khawa using gas, diesel, or wood, ensuring faster processing and consistent quality.",
-    img: "Images/Khawa_machine.png",
+    img: "Images/khawa_machine.png",
   },
 
   {
@@ -64,7 +64,11 @@ const products = [
   },
 ];
 
-// =============================================================
+// ============================================
+function goToProduct(index) {
+  window.location.href = `product.html?product=${index}`;
+}
+// =================================================
 // PRODUCT CHANGE WITH SLIDE ANIMATION
 // =============================================================
 
