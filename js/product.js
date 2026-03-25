@@ -1,11 +1,24 @@
-const toggleBtn = document.querySelector(".toggle-details");
-const expandBox = document.querySelector(".product-expand");
-const closeBtn = document.querySelector(".close-btn");
+// ==================== FILTER JS ====================
 
-toggleBtn.addEventListener("click", () => {
-  expandBox.classList.toggle("active");
-});
+const pills = document.querySelectorAll(".category-pill");
+const products = document.querySelectorAll(".product-card");
 
-closeBtn.addEventListener("click", () => {
-  expandBox.classList.remove("active");
+pills.forEach((pill) => {
+  pill.addEventListener("click", () => {
+    // Active state
+    pills.forEach((p) => p.classList.remove("active"));
+    pill.classList.add("active");
+
+    const filter = pill.getAttribute("data-filter");
+
+    products.forEach((product) => {
+      const category = product.getAttribute("data-category");
+
+      if (filter === "all" || filter === category) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
 });
